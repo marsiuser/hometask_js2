@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+</head>
+<body>
+    <!-- С помощью цикла for
+    №3. вывести каждый 4-й элемент из указаного пользователем диапазона (пользователь указывает 
+    минимальное и максимальное значения диапазона) -->
+    <script defer>
+        let min= Number(prompt('Enter min: '));
+        let max = Number(prompt('Enter max: '));
+        let num;
+        for(let i=min; i<=max; i++){
+            if(i%4 == 0){
+                console.log(i);
+            }
+            else{
+                console.log('');
+            }
+        }
+    </script>
+</body>
+</html>

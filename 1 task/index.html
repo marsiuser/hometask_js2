@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- С помощью оператора if 
+    №1. вычислить сумму покупки с учетом скидки. cкидка 3% предоставляется, если сумма покупки больше 500 грн., 
+    а скидка 5% - если сумма покупки больше 800 грн. cумму покупки вводит пользователь. -->
+    <div class="calculations_wrapper">
+        <p>Discount: <span id="discount"></span></p>
+        <p>You saved thanks to the discount: <span id="amount_sale"></span></p>
+        <p>You have to pay: <span id="have_to__pay"></span></span></p>
+        <p>Price before discount: <span id="price_before"></span></p>
+    </div>
+
+    <script defer>
+        
+        let sum, sale, amount, salePrice;
+        let discount  = document.getElementById('discount');
+        let amountSale = document.getElementById('amount_sale');
+        let haveToPay = document.getElementById('have_to__pay');
+        let priceBefore = document.getElementById('price_before');
+        sum = Number(prompt("Enter the sum: "));
+
+        if (sum > 500 && sum <=799){
+            priceBefore.textContent = sum + ' UAH';
+            sale= 3 +'%'; 
+            console.log('Discount: ', sale);
+            discount.textContent = sale;
+            amount= (sum*3)/100;
+            console.log('You saved thanks to the discount: ', amount, 'UAH');
+            amountSale.textContent = amount + ' UAH';
+            salePrice = sum - amount;
+            console.log('You have to pay: ', salePrice, 'UAH');
+            haveToPay.textContent = salePrice + ' UAH';
+        }
+        else if(sum >= 800){
+            priceBefore.textContent = sum + ' UAH';
+            sale= 5 +'%'; 
+            console.log('Discount: ', sale);
+            discount.textContent = sale;
+            amount= (sum*5)/100;
+            console.log('You saved thanks to the discount: ', amount, 'UAH');
+            amountSale.textContent = amount + ' UAH';
+            salePrice = sum - amount;
+            console.log('You have to pay: ', salePrice, 'UAH');
+            haveToPay.textContent = salePrice + ' UAH';
+        }
+        else{
+            console.log('Sorry, there was some problem :(')
+        }
+    </script>
+</body>
+</html>

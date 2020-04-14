@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+</head>
+<body>
+    <!-- №4 вычислить сумму первых N элементов последовательности 1 + 1/2 + 1/3 + ...+ 1/N . 
+    параметр N задает пользователь -->
+    <script defer>
+        let N= Number(prompt('Enter N: '));
+        let sum=0;
+        for(let i=1; i<N; i++){
+            sum+= (1/i);
+            console.log(sum);
+        }
+    </script>
+</body>
+</html>

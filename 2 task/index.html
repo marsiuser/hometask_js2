@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+<body>
+    <!-- С помощью switch
+    №2. запросить у пользователя номер дня недели и вывести соответствующее полное строковое название (например, 
+    если пользователь вводит 7 -  выводится сообщение "воскресенье"). предусмотреть ошибку введения (default) -->
+    <p id="empty">Day: </p>
+    <p id="select_day"></p>
+    
+    <script defer>
+        let choice = prompt("Enter 1<= number =<7: ");
+        let day = document.getElementById('select_day');
+        switch (choice) {
+        case '1':
+            day.textContent = 'Monday';
+            break;
+        case '2':
+            day.textContent = 'Tuesday';
+            break;
+        case '3':
+            day.textContent = 'Wednesday';
+            break;
+        case '4':
+            day.textContent = 'Thursday';
+            break;
+        case '5':
+            day.textContent = 'Friday';
+            break;
+        case '6':
+            day.textContent = 'Saturday';
+            break;
+        case '7':
+            day.textContent = 'Sunday';
+            break;
+        default:
+            document.getElementById('empty').innerHTML= " ";
+            day.textContent = 'Sorry, there was some problem :(';
+        }
+    </script>
+</body>
+</html>

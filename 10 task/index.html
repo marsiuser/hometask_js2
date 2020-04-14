@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10</title>
+</head>
+<body>
+    <!-- №10 выводит таблицу умножения по числу, который вводит пользователь 
+    (например, пользователь вводит 3, вид вывода: -->
+
+    <script defer>
+        function table(){
+            let num = Number(prompt('Enter number: '));
+            for(i=0; i<=10; i++){
+                document.write(i +'*'+ num +' '+' = '+num*i+ '<br>');
+            }
+        }
+        table();
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 12</title>
+</head>
+<body>
+    <script defer>
+        
+    let student = {     
+        name: "John",  
+        surname: "Bob",
+        age: 30,
+        gender: "Male",
+        contacts: "tel. +380983445656"
+    };
+
+    let addFields = {     
+        faculty: "Computer science",  
+        cathedra: "Software engineering"
+    };
+    
+   console.log( Object.assign(student, addFields));
+
+    function printAll(user) {
+       document.write("Name: " + user.name + '<br>' +'Surname: ' + user.surname+ '<br>' + user.age + '<br>' + user.gender 
+       +'<br>'+ user.contacts +'<br>' + user.faculty + '<br>' + user.cathedra);
+    }
+
+    printAll(student);
+
+    </script>
+</body>
+</html>

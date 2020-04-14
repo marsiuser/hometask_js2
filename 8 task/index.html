@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 task</title>
+</head>
+<body>
+    <!-- №8 вывести все числа от 1 до 100 который кратные указанному пользователю числу -->
+    <script defer>
+        let x=1;
+        let num = Number(prompt('Enter number: '));
+        while(x<=100){
+            x++;
+            if(x % num == 0){
+                console.log(x);
+            }
+        }
+        if(num>100){
+            console.log('Enter number less 100!');
+        }
+    </script>
+</body>
+</html>

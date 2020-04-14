@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7task</title>
+</head>
+<body>
+    <!-- С помощью while
+    №7 вывести значения функции y = 2x^2 - 5x - 8 в диапазоне (для х) от -2 до 2 с шагом 0.5  -->
+    <script defer>
+        var x = -2; 
+        var func = '';
+        while (x<= 2) {
+            func= (Math.pow((x*2), 2)-(5*x) - 8) + '<br>';  
+            x+=0.5;
+            document.write('Y= ' + func);
+        }
+            </script>
+</body>
+</html>

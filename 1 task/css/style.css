@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span{
+    color: #89d13c;
+}
+
+.calculations_wrapper{
+   text-align: center;
+   width: 60%;
+   margin: 0 auto;
+   background-color: #f3f3f3;
+   padding: 20px 10px;
+   border-radius: 15px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+</head>
+<body>
+    <!-- Написать функцию
+    №9 которая запрашивает число и проверяет простое ли оно (простое число делиться без остатка на себя и на единицу) -->
+    
+    <script defer>
+        function checkNumber(){
+            let x=Number(prompt('Enter number: ')),
+            answ=true;
+            for (let i=2; i<x; i++){
+                if(x<=1 || x%i==0){
+                    answ=false;
+                    break;
+                }	
+            };
+
+            let num=(x>1 && answ)? x+" simple number":x +" is not simple number";
+            document.write(num);
+        };
+
+        checkNumber();
+    </script>
+</body>
+</html>
